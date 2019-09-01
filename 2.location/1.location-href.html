@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//location.href用于返回当前页面的完整的URL地址
+			console.log(location.href);//file:///E:/Projects/SunlimeTextProjects/JavaScript/2.BOM/2.location/1.location-href.html
+			//location.hash就是锚点
+			//比如file:///E:/Projects/SunlimeTextProjects/JavaScript/2.BOM/2.location/1.location-href.html#abc
+			console.log(location.hash);//#abc
+			//location.href和location.hash不仅能获取，还能设置
+			location.hash = "#top";//它回去找id为top的元素，来到这个元素的最上边
+			console.log(location.pathname);///E:/Projects/SunlimeTextProjects/JavaScript/2.BOM/2.location/1.location-href.html
+		};
+	</script>
+</head>
+<body>
+	<a href="#abc">去</a>
+	<br/><br/><br/><br/><br/><br/><br/><br/>
+	<a name="abc">我呀，哎！</a>
+	<br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/>
+	<br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>

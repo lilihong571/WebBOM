@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		function abc(){
+			alert("abc");
+		}
+		//参数：要执行的函数，过多少ms之后执行
+		//setTimeout(abc(),5000);//这么写的话，一运行就会执行，不会等5s
+		setTimeout(abc,5000);	//这么写的话，运行后会等5s后再执行函数
+		//2s后执行函数
+		setTimeout(function(){
+			console.log("我是李利红！");
+		},2000);
+	</script>
+</head>
+<body>
+</body>
+</html>

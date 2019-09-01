@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//获取按钮
+			var btn = document.getElementById("btnId");
+			//按钮点击回退
+			btn.onclick=function(){
+				//history.back();//返回上一个界面
+				//history.go(-1);//返回上一个界面
+				history.go(-2);//返回历史记录的前两个界面
+			};
+		};
+	</script>
+</head>
+<body>
+	<h1>这是第三个页面</h1>
+	<div><input type="button" name="button" value="后退" id="btnId"></div>
+</body>
+</html>

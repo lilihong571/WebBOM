@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//获取按钮
+			var btn = document.getElementById("inputId");
+			//获取文本
+			var text = document.getElementById("spanId");
+			//按钮监听
+			btn.onclick=function(){
+				//点击确定confirm会返回true,点击取消confirm会返回false
+				var result = confirm("是否删除！");
+				if(result == true){
+					// text.style.display = "none";
+					// btn.style.display = "none";
+					text.outerHTML = "";
+					btn.outerHTML = "";
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<span id="spanId">我好想你！</span><input type="button" value="删除" name="删除" id="inputId">
+</body>
+</html>

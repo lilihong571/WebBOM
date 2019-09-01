@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//延迟调用
+		var resultId = setTimeout(function(){
+			console.log("我呀，迟到了2秒！");
+		},2000);
+		//清除延迟调用
+		clearTimeout(resultId);//不会执行返回值为resultId的setTimeout()函数了，相当于什么也没做
+	</script>
+</head>
+<body>
+</body>
+</html>

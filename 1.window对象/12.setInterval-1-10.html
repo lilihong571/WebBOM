@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var num=1;
+		//间歇调用实现1-10递增
+		var IntervalId = setInterval(function(){
+			console.log(num);
+			num++;
+			if(num>10){
+				//清除间歇调用
+				clearInterval(IntervalId);
+			}
+		},1000);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

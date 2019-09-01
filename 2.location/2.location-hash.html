@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#top{
+			height: 500px;
+			background-color: red;
+		}
+		#bottom{
+			height: 500px;
+			background-color: blue;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			//获取按钮
+			var btn = document.getElementById("btnId");
+			//按钮点击事件
+			btn.onclick=function(){
+				location.hash = "#top";//这么写的话，相当于告诉他锚点是top,会去寻找id为top的元素，并定位到它
+			};
+		};	
+	</script>
+</head>
+<body>
+	<div id="top"></div>
+	<div id="bottom"></div>
+	<input type="button" name="button" value="回顶部" id="btnId">
+</body>
+</html>

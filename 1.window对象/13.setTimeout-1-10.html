@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		var num = 1;
+		function outputTen(){
+			console.log(num);
+			num++;
+			if(num<=10){
+				//在超时调用里调用自身函数，实现类似间歇调用的效果
+				setTimeout(outputTen,1000);
+			}else{
+				//清除超时调用
+				clearTimeout();
+			}
+		}
+		//超时调用实现每隔1s 1-10的递增
+		var timeoutId = setTimeout(outputTen,1000);
+	</script>
+</head>
+<body>	
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//获取按钮
+			var btn = document.getElementById("btnId");
+			//点击按钮事件
+			btn.onclick=function(){
+				// history.forword();//前进一个页面//回到历史记录的下一步
+				history.go(1);
+			};
+		};
+	</script>
+</head>
+<body>
+	<h1>我是第一个界面</h1>
+	<div><a href="11.history-forword.html">去下一个界面</a></div>
+	<div><input type="button" name="button" value="前进" id="btnId"></div>
+</body>
+</html>

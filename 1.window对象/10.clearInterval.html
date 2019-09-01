@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//间歇调用来一个
+		var resultId = setInterval(function(){
+			console.log("我被打印出来了！")
+		},2000);
+		//10秒之后停止打印
+		var timeoutId = setTimeout(function(){
+			//清除间歇调用
+			clearInterval(resultId);
+			console.log("10s了，你别给我打印了!")
+		},10000);
+		//间歇调用/超时调用的ID打印出来是一个number类型，但是视频说这个ID是一个对象
+		console.log(typeof timeoutId);
+	</script>
+</head>
+<body>
+</body>
+</html>

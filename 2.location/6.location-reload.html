@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		window.onload=function(){
+			//获取button
+			var btn = document.getElementById("btnId");
+			//按钮监听事件
+			btn.onclick=function(){
+				//刷新(重新加载)页面，一般放在代码的最后面
+				location.reload();//会从缓存中重新加载
+				//location.reload(true);//会从服务器中重新加载
+			};
+		};
+	</script>
+</head>
+<body>
+	<input type="button" name="button" value="刷新" id="btnId">
+</body>
+</html>

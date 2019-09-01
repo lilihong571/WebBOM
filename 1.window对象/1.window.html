@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//声明一个变量--全局变量
+		//在window对象上声明了一个叫age的属性
+		var age = 21;//相当于window.age = 21;//不能写成var window.age = 21;
+		function windowTest(){
+			alert("我"+window.age);//调用时候可以写window.age
+		}
+		windowTest();
+		window.username = "llh";//等价于var username = "llh";
+		//声明一个全局的方法
+		window.sayName=function(){
+			alert(username);
+		};//等价于function sayName(){alert(username);}
+		sayName();
+	</script>
+</head>
+<body>
+</body>
+</html>

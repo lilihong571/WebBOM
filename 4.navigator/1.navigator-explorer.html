@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+		//封装一个函数。用于判断浏览器类型
+		function getBrowser(){
+			var explorer = navigator.userAgent.toLowerCase(),browser;
+			if(explorer.indexOf("msie")>-1){
+				browser = "IE";
+			}else if(explorer.indexOf("chrome")>-1){
+				browser = "chrome";
+			}else if(explorer.indexOf("safari")>-1){
+				browser = "safairi";
+			}else if(explorer.indexOf(opera)>-1){
+				browser = "opera";
+			}	
+			return browser;
+		}
+		var explorer = getBrowser();
+		console.log("您当前使用的是："+explorer+"浏览器");//mozilla/5.0 (windows nt 10.0; wow64) applewebkit/537.36 (khtml, like gecko) chrome/76.0.3809.100 safari/537.36
+		//indexOf()方法返回某个指定的字符串值在字符串中首次出现的位置，如果没有出现过，返回-1
+	</script>
+</head>
+<body>
+</body>
+</html>
